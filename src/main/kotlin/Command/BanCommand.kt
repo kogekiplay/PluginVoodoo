@@ -10,7 +10,7 @@ import org.AlerHughes.PluginVoodoo
 import kotlin.random.Random
 
 object BanCommand : SimpleCommand (
-    PluginVoodoo, "SB",
+    PluginVoodoo, "SB","BANME",
     description = "自虐禁言"
     ){
         @Handler
@@ -20,22 +20,22 @@ object BanCommand : SimpleCommand (
             var text: String = ""
             if (seed == 1) {
                 time = 60
-                text = "60秒！ 太可惜了"
+                text = "恭喜你被禁言60秒！ 运气不错~"
             } else if (seed == 2) {
                 time = 600
-                text = "十分钟！ 啧啧啧"
+                text = "恭喜你被禁言十分钟！ 安静一会吧~"
             } else if (seed == 3) {
-                time = 3600
-                text = "一小时！ 嘻嘻"
+                time = 1800
+                text = "恭喜你被禁言半个小时！ 小睡一会吧~"
             }
             else if(seed == 4){
-                time = 86400
-                text = "天呐 一整天！ 你可真倒霉"
+                time = 14400
+                text = "你被禁言了4个小时，请对管理员说出你的遗言😋"
             }
 
             else if(seed == 5) {
-                time = 2592000
-                text = "下个月见"
+                time = 28800
+                text = "精致睡眠8小时，不许反悔😇"
             }
 
             sendMessage(At(user!!) + PlainText(text))

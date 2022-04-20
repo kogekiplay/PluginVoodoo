@@ -14,7 +14,7 @@ import org.AlerHughes.PluginVoodoo
 
 
 object TarotCommand : SimpleCommand(
-    PluginVoodoo, "vdTarot",
+    PluginVoodoo, "vdTarot","塔罗",
     description = "塔罗牌占卜"
 ){
     @Handler

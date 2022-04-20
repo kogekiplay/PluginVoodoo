@@ -9,7 +9,7 @@ import java.time.LocalDate
 import kotlin.random.Random
 
 object EverydayLuckCommand : SimpleCommand(
-    PluginVoodoo, "vdLuck",
+    PluginVoodoo, "vdLuck","今日运势",
     description = "今日运势"
 ){
     @Handler
